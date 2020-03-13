@@ -1,0 +1,75 @@
+.main
+  .header
+    .header__logo
+      = link_to "https://uwasa.jp/", class: "logo" do
+        UWASA 
+    .header__right
+      - if 
+          = link_to "#" do
+            ログアウト
+          = link_to "#" do
+            新規投稿
+      - else
+          = link_to "#" do
+            ログイン
+          = link_to "#" do
+            新規登録
+    .header__nav
+      %ul
+        %li
+          = link_to "https://uwasa.jp/" do
+            .menu_title ホーム
+            .menu_desc HOME
+        %li
+          = link_to "https://uwasa.jp/archives/category/beauty" do
+            .menu_title ビューティー
+            .menu_desc BEAUTY
+        %li
+          = link_to "https://uwasa.jp/archives/category/gourmet" do
+            .menu_title グルメ
+            .menu_desc GOURMET
+        %li
+          = link_to "https://uwasa.jp/archives/category/trip" do
+            .menu_title おでかけ
+            .menu_desc TRIP
+        %li
+          = link_to "https://uwasa.jp/archives/category/fashion" do
+            .menu_title ファッション
+            .menu_desc FASHION
+        %li
+          = link_to "https://uwasa.jp/archives/category/column" do
+            .menu_title コラム
+            .menu_desc COLUMN
+        %li
+          = link_to "https://uwasa.jp/feature" do
+            .menu_title 特集一覧
+            .menu_desc FUTURE TOPICS
+        %li
+          = link_to "https://uwasa.jp/ranking" do
+            .menu_title ランキング
+            .menu_desc RANKING
+    .header__article
+      = image_tag 'test_image.jpg', alt: 'sample', height: '151px', width: '270px', class: 'image'
+      = link_to "#" do
+        .new-topic フォッション
+        .new-topic__inside これは最新記事になります
+      = image_tag 'img_cliants01.png', alt: 'sample', height: '151px', width: '270px', class: 'image'
+      = link_to "#" do
+        %h2.new-topic 最新記事２
+  .center
+    .center__bottom
+      -# = link_to "#", class: "article" do
+      -#   記事１
+      -# = link_to "#", class: "article" do
+      -#   記事２
+      -# = link_to "#", class: "article" do
+      -#   記事３
+      -# = link_to "#", class: "article" do
+      -#   記事４
+      -# = link_to "#", class: "article" do
+      -#   記事５
+      -# = link_to "#", class: "article" do
+      -#   記事６
+  .footer
+    .footer__first
+    .footer__seconde
